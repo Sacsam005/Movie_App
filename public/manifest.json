@@ -1,0 +1,29 @@
+{
+  "short_name": "TMDB",
+  "name": "The Movie DataBase",
+  "description": "The Movie Database (TMDB) is a popular, user editable database for movies and TV shows.",
+  "icons": [
+    {
+      "src": "./clapper_128.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./clapper_256.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./clapper_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "scope": "./",
+  "lang": "en"
+}

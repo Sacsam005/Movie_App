@@ -1,0 +1,72 @@
+.movie_card {
+  position: relative;
+  max-width: 200px;
+  width: 97%;
+  max-height: fit-content;
+  height: fit-content;
+  margin: 1rem 0.5rem;
+  scroll-snap-align: center;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card_img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.movie_details {
+  padding: 0.1rem;
+}
+
+.movie_details h6 {
+  font-weight: 600;
+}
+
+.movie_details p {
+  font-size: 14px;
+}
+
+.badge {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+@media screen and (max-width: 680px) {
+  .movie_card {
+    width: 100%;
+    max-width: 96%;
+    margin: 0.5rem 0.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie_card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0.25rem;
+  }
+
+  .card_img img {
+    object-position: top;
+  }
+
+  .movie_details h6,
+  .movie_card p,
+  .badge {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .movie_card {
+    max-width: 95%;
+  }
+}

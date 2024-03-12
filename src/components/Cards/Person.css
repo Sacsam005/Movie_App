@@ -1,0 +1,27 @@
+.person_container {
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.person__card {
+  background: #e2e2e2;
+  scroll-snap-align: center;
+  width: 200px;
+  max-width: fit-content;
+}
+
+.person_img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.person_content p {
+  font-size: 13px;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

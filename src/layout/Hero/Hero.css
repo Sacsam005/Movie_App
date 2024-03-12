@@ -1,0 +1,19 @@
+.items_container__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: 300px;
+  place-items: center;
+  grid-gap: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .items_container__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .items_container__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

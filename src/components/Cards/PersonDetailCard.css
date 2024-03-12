@@ -1,0 +1,38 @@
+.person_detail__card {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(222, 222, 222, 0.9);
+  margin: 4.5rem auto 0.5rem auto !important;
+  padding: 1rem;
+}
+
+.person_detail {
+  font-weight: 600;
+}
+
+.person_detail__img img {
+  width: 180px;
+  height: 200px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .person_detail__card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .person_detail__card {
+    width: 95%;
+    margin: 0.25rem auto;
+    padding: 0.5rem;
+  }
+
+  .person_detail__card p {
+    font-size: 1rem !important;
+  }
+}

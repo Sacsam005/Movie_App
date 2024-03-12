@@ -1,0 +1,100 @@
+/* css for MovieDetail && TvDetail components */
+.item_details__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+
+.item_details__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background: rgba(222, 222, 222, 0.9);
+  padding: 1rem;
+  margin-top: -80px;
+  z-index: 99;
+}
+
+.item_details__div {
+  display: flex;
+}
+
+.item_details__img img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.item_details__text p {
+  font-weight: 600;
+}
+
+.item_details__extra_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item_details_list_one,
+.item_details_list_two {
+  width: 50%;
+}
+
+.item_details_list_one p,
+.item_details_list_two p {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .item_details__container {
+    width: 97%;
+  }
+
+  .item_details__div {
+    flex-direction: column;
+  }
+
+  .item_details__img {
+    align-self: center;
+  }
+
+  .item_details__extra_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item_details_list_one,
+  .item_details_list_two {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .item_details__img img {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+  }
+
+  .item_details__wrapper p {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .items_container__wrapper,
+  .item_details__wrapper {
+    padding: 0.2rem !important;
+  }
+
+  .item_details__container {
+    width: 95%;
+    padding: 0.2rem;
+  }
+}
